@@ -1,0 +1,23 @@
+alias gs="git status"
+alias gb="git branch"
+alias gc="git checkout"
+alias gp="git pull"
+alias gl="git log"
+alias ga="git add"
+alias gcm="git commint -m"
+
+alias lg="lazygit"
+
+alias mt="make test"
+alias mp="make proto"
+
+alias v=nvim
+alias t=tmux
+
+alias q=exit
+
+alias zj=zellij
+
+alias yz=yazi
+
+alias jp="ssh -o ServerAliveCountMax=3 -o ServerAliveInterval=30 fengpan@jp.wepie.com -p 2222"
