@@ -1,0 +1,17 @@
+{
+  "err wrap": {
+    "prefix": "errw",
+    "body": "if err != nil {\n\treturn ${1:nil}, fmt.Errorf(\"${2:context}: %w\", err)\n}",
+    "description": "Wrap error with context"
+  },
+  "type assert ok": {
+    "prefix": "ifok",
+    "body": "if ${1:v}, ok := ${2:expr}.(${3:type}); ok {\n\t$0\n}",
+    "description": "Type assertion with ok check"
+  },
+  "type switch": {
+    "prefix": "swtype",
+    "body": "switch v := ${1:expr}.(type) {\ncase ${2:type}:\n\t$0\ndefault:\n}",
+    "description": "Type switch"
+  }
+}

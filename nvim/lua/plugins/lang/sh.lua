@@ -1,27 +1,7 @@
-if vim.g.vscode then
-	return {}
-end
-
 return {
 	{
-		"neovim/nvim-lspconfig",
-		event = { "BufReadPre", "BufNewFile" },
-		opts = {
-			servers = {
-				bashls = {
-					cmd = { "bash-language-server", "start" },
-					filetypes = { "bash", "sh" },
-					settings = {
-						bashIde = {
-							globPattern = "*@(.sh|.inc|.bash|.command)",
-						},
-					},
-				},
-			},
-		},
-	},
-	{
 		"williamboman/mason.nvim",
+		enabled = not vim.g.vscode,
 		event = "VeryLazy",
 		opts = function(_, opts)
 			opts.ensure_installed = opts.ensure_installed or {}
@@ -33,6 +13,7 @@ return {
 	},
 	{
 		"stevearc/conform.nvim",
+		enabled = not vim.g.vscode,
 		optional = true,
 		opts = {
 			formatters_by_ft = {
