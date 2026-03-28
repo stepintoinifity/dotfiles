@@ -116,7 +116,7 @@ export TERM=xterm
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export GOPRIVATE=git.17zjh.com
-export OPENROUTER_API_KEY="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"
+# export OPENROUTER_API_KEY="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"
 
 source ~/.aliases
 
@@ -138,3 +138,15 @@ function y() {
 if [[ "$(tty)" == "/dev/tty1" ]]; then
     exec Hyprland &>/dev/null
 fi
+
+# ── LiteLLM Claude Code 配置 (added by switch_to_litellm.sh) ──────────────────
+export ANTHROPIC_AUTH_TOKEN="sk-tn1KM4y2XTKEzzaMRAojqQ"
+export ANTHROPIC_BASE_URL="https://litellm.wepieoa.com"
+export ANTHROPIC_MODEL="anthropic.novita.claude-sonnet-4-6"
+export ANTHROPIC_SMALL_FAST_MODEL="anthropic.novita.claude-haiku-4-5"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="anthropic.novita.claude-opus-4-6"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="anthropic.novita.claude-sonnet-4-6"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="anthropic.novita.claude-haiku-4-5"
+export CLAUDE_CODE_SUBAGENT_MODEL="anthropic.novita.claude-sonnet-4-6"
+export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
+# ─────────────────────────────────────────────────────────────────────────────

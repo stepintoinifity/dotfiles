@@ -21,3 +21,9 @@ alias zj=zellij
 alias yz=yazi
 
 alias jp="ssh -o ServerAliveCountMax=3 -o ServerAliveInterval=30 fengpan@jp.wepie.com -p 2222"
+
+alias gca="git clone git@git.17zjh.com:FirstWar/FirstWarUnityArtModule.git"
+
+alias cc="~/ai/claude_code_use.sh"
+
+alias ce="claude"
